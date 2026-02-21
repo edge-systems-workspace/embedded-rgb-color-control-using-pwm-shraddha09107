@@ -31,6 +31,8 @@ void setup() {
     // TODO 5:
     // Configure RGB pins as OUTPUT
     pinMode(red_led, OUTPUT);
+    pinMode(green_led, OUTPUT);
+    pinMode(blue_led, OUTPUT);
 
     // TODO 6:
     // Print initialization message
@@ -43,14 +45,22 @@ void loop() {
 
     // TODO 7:
     // Turn ON red (digital HIGH)
+    digitalWrite(red_led, HIGH);
+    digitalWrite(green_led, LOW);
+    digitalWrite(blue_led, LOW);
+    delay(1000);
 
     // TODO 8:
     // Turn OFF red
+    digitalWrite(red_led, LOW);
 
     // -------- ANALOG (PWM) MODE --------
 
+
     // TODO 9:
     // Set RED brightness using analogWrite()
+        analogWrite(red_led, 128); // 50% brightness
+        delay(1000);
 
     // TODO 10:
     // Set GREEN brightness using analogWrite()
