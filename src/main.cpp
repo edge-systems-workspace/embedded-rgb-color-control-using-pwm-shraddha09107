@@ -2,8 +2,8 @@
 /**
  * @file main.cpp
  * @brief Embedded RGB LED Control (Digital + PWM)
- * @author YOUR_NAME
- * @date YYYY-MM-DD
+ * @author Shraddha Singh
+ * @date 2026-02-21
  *
  * @details
  * Controls RGB LED using digital ON/OFF
@@ -12,12 +12,15 @@
 
  // TODO 1:
  // Define RED pin (Use 9)
+int red_led = 9;
 
  // TODO 2:
  // Define GREEN pin (Use 10)
+int green_led = 10;
 
  // TODO 3:
  // Define BLUE pin (Use 11)
+int blue_led = 11;
 
 void setup() {
 
