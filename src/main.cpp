@@ -59,15 +59,22 @@ void loop() {
 
     // TODO 9:
     // Set RED brightness using analogWrite()
-        analogWrite(red_led, 128); // 50% brightness
-        delay(1000);
+    analogWrite(red_led, 255);   // Full brightness
+    analogWrite(green_led, 0);
+    analogWrite(blue_led, 0);
 
     // TODO 10:
     // Set GREEN brightness using analogWrite()
+    analogWrite(red_led, 0);
+    analogWrite(green_led, 128); // Medium brightness
+    analogWrite(blue_led, 0);
 
     // TODO 11:
     // Set BLUE brightness using analogWrite()
-
+    analogWrite(red_led, 0);
+    analogWrite(green_led, 0);
+    analogWrite(blue_led, 64);   // Low brightness
     // TODO 12:
     // Add delay for visible transition
+    delay(1000);
 }
