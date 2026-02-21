@@ -26,12 +26,15 @@ void setup() {
 
     // TODO 4:
     // Initialize Serial communication (9600 baud)
+    Serial.begin(9600);
 
     // TODO 5:
     // Configure RGB pins as OUTPUT
+    pinMode(red_led, OUTPUT);
 
     // TODO 6:
     // Print initialization message
+    Serial.println("RGB LED Control System Initialized");
 }
 
 void loop() {
